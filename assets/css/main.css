@@ -325,7 +325,7 @@ body {
       .post .article-image .post-meta-text a:hover {
         color: white; }
   .post .article-image .fa-angle-down {
-    font-size: 32px;
+    font-size: 56px;
     margin: 64px auto 0;
     color: rgba(255, 255, 255, 0.75); }
     .post .article-image .fa-angle-down:hover {
@@ -359,7 +359,7 @@ body {
 .post .noarticleimage .post-meta-text {
   color: #b3b3b1;
   letter-spacing: -0.02em;
-  font-weight: 400;
+  font-weight: 500;
   font-style: normal;
   font-size: 14px;
   overflow: hidden;
