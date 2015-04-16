@@ -310,7 +310,7 @@ body {
   .post .article-image .author-name {
     display: inline; }
   .post .article-image .post-meta-text {
-    color: rgba(255, 255, 255, 0.85);
+    color: rgba(255, 255, 255, 1);
     letter-spacing: -0.02em;
     font-weight: 400;
     font-style: normal;
@@ -321,7 +321,7 @@ body {
     white-space: nowrap;
     text-overflow: ellipsis; }
     .post .article-image .post-meta-text a {
-      color: rgba(255, 255, 255, 0.75); }
+      color: rgba(255, 255, 255, 1); }
       .post .article-image .post-meta-text a:hover {
         color: white; }
   .post .article-image .fa-angle-down {
