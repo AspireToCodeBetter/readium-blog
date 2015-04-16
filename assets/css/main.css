@@ -291,7 +291,7 @@ body {
     font-weight: 700;
     font-style: normal;
     letter-spacing: -0.04em;
-    font-size: 50px;
+    font-size: 72px;
     line-height: 1.1;
     color: white;
     margin-bottom: 16px;
@@ -325,9 +325,9 @@ body {
       .post .article-image .post-meta-text a:hover {
         color: white; }
   .post .article-image .fa-angle-down {
-    font-size: 56px;
+    font-size: 72px;
     margin: 64px auto 0;
-    color: rgba(255, 255, 255, 0.75); }
+    color: rgba(255, 255, 255, 0.85); }
     .post .article-image .fa-angle-down:hover {
       color: white; }
   .post .article-image .topofpage {
