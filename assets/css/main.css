@@ -353,7 +353,12 @@ body {
   float: left;
   background-size: cover;
   border-radius: 100%;
-  text-indent: -9999px; }
+  text-indent: -9999px;
+  /* Image border */
+  -webkit-box-shadow: rgba(0, 0, 0, 0.298039) 0px 1px 1px 0px;
+  box-shadow: rgba(0, 0, 0, 0.298039) 0px 1px 1px 0px;
+  border:3px solid #fff;
+}
 .post .noarticleimage .author-name {
   display: inline; }
 .post .noarticleimage .post-meta-text {
@@ -361,7 +366,8 @@ body {
   letter-spacing: -0.02em;
   font-weight: 500;
   font-style: normal;
-  font-size: 14px;
+  font-size: 18px;
+  line-height: 50px;
   overflow: hidden;
   font-family: Open Sans, MundoSans, "Helvetica Neue", Arial, Helvetica, sans-serif;
   white-space: nowrap;
