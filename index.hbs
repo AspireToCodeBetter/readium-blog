@@ -63,7 +63,7 @@
                         <section class="post-excerpt" itemprop="description">
                             <p>{{excerpt characters="130"}}&hellip;</p>
                         </section>
-                        <div class="post-meta"><time datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMM YYYY"}}</time> <span class="post-tags-set">on {{#foreach tags}}<span class="post-tag-{{slug}}">{{#if @first}}{{else}}, {{/if}}<a href="/tag/{{slug}}">{{name}}</a></span>{{/foreach}}</span></div>
+                        <div class="post-meta"><time datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMM YYYY"}}</time> by <h4 class="author-name" itemprop="author" itemscope itemtype="http://schema.org/Person">{{author}}</h4></div>
                     </div>
                 </article>
             {{/if}}
