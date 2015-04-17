@@ -42,8 +42,10 @@
     <h2 class="blog-description">{{bio}}</h2>
     <div class="custom-links">
         <a href="https://facebook.com/everydayschool" target="_blank"><i class="fa fa-facebook"></i></a>&nbsp;&nbsp;
-        <a href="https://everydayschool.org" target="_blank"><i class="fa fa-globe"></i></a>&nbsp;&nbsp;
-        <a href="http://everydayschool.org">Sign up for our weekly classes &rarr;</a>&nbsp;&nbsp;·&nbsp;&nbsp;
+        {{#if website}}<a href="{{website}}" target="_blank"><i class="fa fa-globe"></i></a>&nbsp;&nbsp;{{/if}}
+        {{#if location}}<i class="fa fa-map-marker"></i></a>&nbsp;&nbsp; {{location}}{{/if}}
+        <i class="fa fa-bars"></i></a>&nbsp;&nbsp; {{plural ../pagination.total empty='Inga inlägg' singular='% inlägg' plural='% inlägg'}}</span>
+        
     </div>
 </header>
 
