@@ -18,9 +18,9 @@
     <h1 class="blog-title">{{@blog.title}}</h1>
     <h2 class="blog-description">{{@blog.description}}</h2>
     <div class="custom-links">
-        <a href="https://facebook.com/everydayschool" target="_blank"><i class="fa fa-facebook"></i></a>&nbsp;&nbsp;
-        <a href="https://everydayschool.org" target="_blank"><i class="fa fa-globe"></i></a>&nbsp;&nbsp;
-        <a href="http://everydayschool.org">Anmäl dig till våra klasser &rarr;</a>&nbsp;&nbsp;·&nbsp;&nbsp;
+        <a href="https://facebook.com/santoshsrinivas" target="_blank"><i class="fa fa-facebook"></i></a>&nbsp;&nbsp;
+        <a href="https://santoshsrinivas.com" target="_blank"><i class="fa fa-globe"></i></a>&nbsp;&nbsp;
+        <a href="http://santoshsrinivas.com">Visit me &rarr;</a>&nbsp;&nbsp;·&nbsp;&nbsp;
     </div>
 </header>
 
@@ -50,7 +50,7 @@
 {{! The main content area on the homepage }}
 <main class="content" role="main">
 
-    <h5 class="index-headline featured"><span>I fokus</span></h5>
+    <h5 class="index-headline featured"><span>Featured</span></h5>
 
     <div class="container featured">
         {{#foreach posts}}
@@ -63,7 +63,7 @@
                         <section class="post-excerpt" itemprop="description">
                             <p>{{excerpt characters="130"}}&hellip;</p>
                         </section>
-                        <div class="post-meta"><time datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMM YYYY"}}</time> av <span class="author-name" itemprop="author" itemscope itemtype="http://schema.org/Person">{{author}}</span></div>
+                        <div class="post-meta"><time datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMM YYYY"}}</time> <span class="post-tags-set">on {{#foreach tags}}<span class="post-tag-{{slug}}">{{#if @first}}{{else}}, {{/if}}<a href="/tag/{{slug}}">{{name}}</a></span>{{/foreach}}</span></div>
                     </div>
                 </article>
             {{/if}}
@@ -71,7 +71,7 @@
     </div>
 
 
-    <h5 class="index-headline normal"><span>Inlägg</span></h5>
+    <h5 class="index-headline normal"><span>Regular</span></h5>
 
     <div class="cf frame">
     {{#foreach posts}}
@@ -99,7 +99,7 @@
 </main>
 
 <footer class="site-footer">
-    <a class="subscribe icon-feed" href="{{@blog.url}}/rss/"><span class="tooltip"> Prenumerera på bloggen</span></a><br/><br/>
+    <a class="subscribe icon-feed" href="{{@blog.url}}/rss/"><span class="tooltip"> Subscribe!</span></a><br/><br/>
     <div class="inner">
          <section class="copyright">&copy;{{date format="YYYY"}} <a href="{{@blog.url}}/">{{@blog.title}}</a> &bull; Share with pride.</section>
     </div>
