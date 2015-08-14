@@ -28,6 +28,8 @@
         $("div.gist").siblings("link").remove();
         $("div.gist-meta").remove();
         $("div.gist .gist-data h1").remove();
+        $("body").fadeIn(1000);
+        $("body").removeClass('hidden');
 
     });
 

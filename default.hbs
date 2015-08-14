@@ -35,11 +35,12 @@
     {{! Styles'n'Scripts }}
     <link rel="stylesheet" type="text/css" media="screen" href="{{asset "css/main.css"}}" />
     <link rel="stylesheet" type="text/css" media="print" href="{{asset "css/print.css"}}" />
+    <link rel="stylesheet" type="text/css" media="screen" href="{{asset "css/custom.css"}}" />
     <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     {{! Ghost outputs important style and meta data with this tag }}
     {{ghost_head}}
 </head>
-<body class="{{body_class}}">
+<body class="{{body_class}} hidden">
 
     <a href="{{@blog.url}}" class="logo-readium"><span class="logo" style="background-image: url({{@blog.logo}})"></span></a>
     {{! Everything else gets inserted here }}
