@@ -28,7 +28,7 @@
         $("div.gist").siblings("link").remove();
         $("div.gist-meta").remove();
         $("div.gist .gist-data h1").remove();
-        $(".load-bar").remove();
+        $(".spinner").remove();
         $("#content.hidden").fadeIn(1000);
         $("#content").removeClass('hidden');
 
