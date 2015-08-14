@@ -40,8 +40,16 @@
     {{! Ghost outputs important style and meta data with this tag }}
     {{ghost_head}}
 </head>
-<body class="{{body_class}} hidden">
 
+<body class="{{body_class}}">
+    <div class="load-bar">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </div>
+
+
+    <div id="content" class="hidden">
     <a href="{{@blog.url}}" class="logo-readium"><span class="logo" style="background-image: url({{@blog.logo}})"></span></a>
     {{! Everything else gets inserted here }}
     {{{body}}}
@@ -55,5 +63,6 @@
     <script src="{{asset "js/readingTime.min.js"}}"></script>
     <script src="{{asset "js/highlight.pack.js"}}"></script>
     <script>hljs.initHighlightingOnLoad();</script>
+    </div>
 </body>
 </html>
