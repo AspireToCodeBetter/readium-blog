@@ -32,6 +32,9 @@
         $("#content.hidden").fadeIn(1000);
         $("#content").removeClass('hidden');
 
+        /*Add the spotify current playing widget*/
+        SCP('#spotify-widget', 'TheKiteRunner', '414fda7ce6e78175c25a361d86f2381d', '100%', '300');
+
     });
 
 }(jQuery));
